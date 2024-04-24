@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +17,60 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Movie-wrapper {
+  width: 500px;
+  background-color: antiquewhite;
+  color: black;
+}
+
+.Movie-search {
+  height: 48px;
+  font-size: 24px;
+  margin-bottom: 32px;
+  padding: 16px;
+  font-weight: bold;
+  width: 475px;
+}
+
+.Movie-title {
+  height: 60px;
+  margin-top: 26px;
+  font-weight: bold;
+}
+
+.Movie-date {
+  margin-top: 26px;
+  font-style: italic;
+}
+
+.Movie-rate {
+  color: red;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+.Movie-rate-button {
+  background-color: #007bff; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  border: none; /* Hapus border */
+  padding: 8px 16px; /* Padding tombol */
+  font-size: 16px; /* Ukuran teks */
+  cursor: pointer; /* Pointer cursor saat diarahkan */
+  border-radius: 4px; /* Sudut melengkung */
+  transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.Movie-rate-button:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
 }
